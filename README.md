@@ -18,7 +18,24 @@ bug-fixes are planned. These bug-fixes should take 2 weeks. After all these proc
 
 # DESIGN
 ## Use case model
+![use case diagram](https://user-images.githubusercontent.com/52790536/153595727-80d6e244-6853-407b-9a2c-aff39b84b3e5.jpg)
 
+
+## Flowchart
+
+![flow1](https://user-images.githubusercontent.com/52790536/153595529-e26b6a8e-51d5-4ed4-aa79-8a88e8ff5066.jpg)
+
+
+![flow2](https://user-images.githubusercontent.com/52790536/153595588-225bab8a-995a-4c33-ad07-60231f749091.jpg)
+
+## UML Class diagram
+
+![uml class2](https://user-images.githubusercontent.com/52790536/153596066-e8a626a0-bfb8-4779-a879-59941670db05.jpg)
+
+## Database Design ER
+
+
+![ERD (1)](https://user-images.githubusercontent.com/52790536/153596366-914dfcae-5423-4cbf-8574-54510999cd4a.jpg)
 
 
 
