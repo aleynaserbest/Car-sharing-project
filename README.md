@@ -63,7 +63,7 @@ Aleyna Serbest - alis.serbest@gmail.com
 
 Cengiz Ersel Akbay - cngizerselakbay@gmail.com 
 
-Project Link - https://researchproject-backend.herokuapp.com
+Backend Project Link - https://researchproject-backend.herokuapp.com
 
 Project Source - https://github.com/emirleroglu/Car-sharing-project
 
