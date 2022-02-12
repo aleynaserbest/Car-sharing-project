@@ -37,5 +37,53 @@ bug-fixes are planned. These bug-fixes should take 2 weeks. After all these proc
 
 ![ERD (1)](https://user-images.githubusercontent.com/52790536/153596366-914dfcae-5423-4cbf-8574-54510999cd4a.jpg)
 
+# Testing
+
+First, we import the `car-sharing-project.postman_collection.json` file into postman. You add the collection file of our project to your own postman application.
+
+You are doing the login process.
+
+![resim](https://user-images.githubusercontent.com/52790536/153720947-2d9bb94b-e8b2-4a58-87d7-a9d9a333d859.png)
+We copy the token from here and add it to the global variable in the postman.
+
+![resim](https://user-images.githubusercontent.com/52790536/153721118-e2d4734b-566f-428e-9ac0-d3032dfe0ab2.png)
+
+After doing this, you should have a screen like this. Environment quick look -> Globals -> variable
+
+![resim](https://user-images.githubusercontent.com/52790536/153721184-d5a77269-195c-41b9-a6bd-a83159d3cda8.png)
+
+Now you can run and view other requests and responses.
+
+![resim](https://user-images.githubusercontent.com/52790536/153721320-803cc8b1-d1a2-403d-b76a-91f7cd67a7be.png)
+
+# Contact 
+Halil Emirleroğlu - emirlerogluhalil@gmail.com
+
+Aleyna Serbest - alis.serbest@gmail.com
+
+Cengiz Ersel Akbay - 
+
+Project Link - https://researchproject-backend.herokuapp.com
+
+Project Source - https://github.com/emirleroglu/Car-sharing-project
+
+Front-end Source -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
