@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "c6a3ebb1-3263-4cfe-8336-a77b61d6bdce",
+		"name": "proje",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"Aleyna\",\n\"password\":\"password\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/auth/signin",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"Halil\",\n\"password\":\"password\",\n\"email\":\"faemo@thichanthit.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/auth/signup",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TimeRangeRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/timerange/getList",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"timerange",
+						"getList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TownRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/town/getList",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"town",
+						"getList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StationRequestByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/station/getList/286",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"station",
+						"getList",
+						"286"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testDb",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/test/db",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"test",
+						"db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTravel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\"id\": 3,\n    \"username\": \"deneme\",\n    \"email\": \"emirlerogluhalil@gmail.com\"\n   \n        \n    },\n    \"timeRange\":{\n        \"id\": 2,\n        \"value\": \"8-9\"\n    \n\n    },\n    \"fromStation\":{\n         \"id\": 575,\n        \"stationname\": \"BAHÇELİEVLER\",\n        \"town\": {\n            \"id\": 280,\n            \"name\": \"PENDİK\"\n        }\n\n    },\n    \"toStation\":{\n          \"id\": 984,\n        \"stationname\": \"DUDULLU CAMPUS\",\n        \"town\": {\n            \"id\": 292,\n            \"name\": \"CAMPUS\"\n        }\n        \n\n    },\n    \"date\":\"2022-12-12\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/create",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTravelv2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\"id\": 4,\n    \"username\": \"Aleyna\",\n    \"email\": \"alis.serbest@gmail.com\"\n   \n        \n    },\n    \"timeRange\":{\n        \"id\": 3,\n        \"value\": \"9-10\"\n    \n\n    },\n    \"fromStation\":{\n          \n        \"id\": 897,\n        \"stationname\": \"AĞAÇDERE\",\n        \"town\": {\n            \"id\": 286,\n            \"name\": \"ŞİLE\"\n        }\n\n    },\n    \"toStation\":{\n          \"id\": 984,\n        \"stationname\": \"DUDULLU CAMPUS\",\n        \"town\": {\n            \"id\": 292,\n            \"name\": \"CAMPUS\"\n        }\n        \n\n    },\n    \"date\":\"2022-07-12\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/create",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTravel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/delete/2",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTravel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\"id\": 4,\n    \"username\": \"Aleyna\",\n    \"email\": \"alis.serbest@gmail.com\"\n   \n        \n    },\n    \"timeRange\":{\n        \"id\": 3,\n        \"value\": \"9-10\"\n    \n\n    },\n    \"fromStation\":{\n          \n        \"id\": 897,\n        \"stationname\": \"AĞAÇDERE\",\n        \"town\": {\n            \"id\": 286,\n            \"name\": \"ŞİLE\"\n        }\n\n    },\n    \"toStation\":{\n          \"id\": 984,\n        \"stationname\": \"DUDULLU CAMPUS\",\n        \"town\": {\n            \"id\": 292,\n            \"name\": \"CAMPUS\"\n        }\n        \n\n    },\n    \"date\":\"2022-09-12\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/update/1",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TravelUserRequest",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/getList/?userId=3",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"getList",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"timeRangeId\": 6,\n  \"fromStationId\": 578,\n  \"toStationId\": 984,\n  \"date\": \"2022-14-12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/search",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/getListByDate/?date=2022-12-12",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"getListByDate",
+						""
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2022-12-12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTravelv3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\"id\": 3\n },\n\"timeRange\":{\"id\":6},\n\"fromStation\":{\n         \"id\": 578\n        \n        \n\n    },\n    \"toStation\":{\n          \"id\": 984\n   \n        \n\n    },\n    \"date\":\"2022-12-12\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/create",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTravelByID using update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://researchproject-backend.herokuapp.com/api/travel/getTravelById/?id=66",
+					"protocol": "https",
+					"host": [
+						"researchproject-backend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"travel",
+						"getTravelById",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "66"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
