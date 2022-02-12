@@ -61,7 +61,7 @@ Halil Emirleroğlu - emirlerogluhalil@gmail.com
 
 Aleyna Serbest - alis.serbest@gmail.com
 
-Cengiz Ersel Akbay - 
+Cengiz Ersel Akbay - cngizerselakbay@gmail.com 
 
 Project Link - https://researchproject-backend.herokuapp.com
 
