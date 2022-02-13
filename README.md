@@ -61,13 +61,13 @@ Halil Emirleroğlu - emirlerogluhalil@gmail.com
 
 Aleyna Serbest - alis.serbest@gmail.com
 
-Cengiz Ersel Akbay - cngizerselakbay@gmail.com 
+Cengiz Ersel Akbay - cengizerselakbay@gmail.com 
 
 Backend Project Link - https://researchproject-backend.herokuapp.com
 
 Project Source - https://github.com/emirleroglu/Car-sharing-project
 
-Front-end Source -
+Frontend Source - https://github.com/erselakbay/Car-sharing-project
 
 
 
