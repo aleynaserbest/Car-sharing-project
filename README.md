@@ -73,7 +73,6 @@ Frontend Source - https://github.com/erselakbay/Car-sharing-project
 
 
 
-selam halil
 
 
 
