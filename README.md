@@ -6,7 +6,7 @@ The purpose of this project is to gather the drivers and passengers of the unive
 ## Objectives
 -	To provide infrastructure for students to find comfortable and safe vehicles on the way to school.
 -	To provide infrastructure so that drivers can find passengers who can contribute to their fuel money.
--	Enabling students to communicate securely using student e-mails.
+-	Enabling students to communicate securely using student e-mails
 ## Planning
 In this project, we aimed to design a system where drivers and users can find each other. This system is a Web-based application.
 First, decisions will be made about Requirement analysis and how the processes should work. This process is expected to take 3 weeks. 
